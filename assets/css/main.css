@@ -1,0 +1,26 @@
+.image-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image-side {
+    width: 33%; /* Adjust the width as needed */
+    height: auto;
+}
+
+.text-side {
+    width: 67%; /* Adjust the width as needed */
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .image-text-container {
+        flex-direction: column;
+    }
+
+    .image-side, .text-side {
+        width: 100%;
+    }
+}
+
